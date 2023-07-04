@@ -1,0 +1,25 @@
+﻿@using Module20.DataBase
+@model User 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+          crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title my-5 container">@Model.FirstName @Model.LastName @Model.Patronymic</h1>
+    <h3 class="container">Adress: @Model.Adress</h3>
+    <h3 class="container">Number phone: @Model.NumberPhone</h3>
+    <h5 class="my-5 container">Description: @Model.Description</h5>
+    <div class="container">
+        <a class="btn btn-secondary" href="/Home/Update">Update</a>
+        <a class="btn btn-danger" href="/Home/RemoveUser">Delete</a>
+    </div>
+</body>
+</html>
